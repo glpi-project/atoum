@@ -787,7 +787,8 @@ class generator
                 return $prefix . '\\' . $class->getName() . ' ';
 
             case method_exists($parameter, 'hasType') && $parameter->hasType():
-                return $prefix . $this->getReflectionTypeName($parameter->getType()) . ' ';
+                $type = $parameter->getType();
+                return $prefix . ($type instanceof \reflectionNamedType ? $type->getName() : (string) $type) . ' ';
 
             default:
                 return '';
