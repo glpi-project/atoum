@@ -28,7 +28,6 @@ env:
 sudo: false
 before_script:
   - composer remove 'atoum/reports-extension'
-  - composer require --ignore-platform-reqs 'atoum/telemetry-extension:^1.0.0'
   - cp resources/configurations/ci/.travis.php.dist .atoum.php
 script:
   - bin/atoum
