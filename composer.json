@@ -1,5 +1,5 @@
 {
-	"name": "atoum/atoum",
+	"name": "glpi-project/atoum",
 	"type": "library",
 	"description": "Simple modern and intuitive unit testing framework for PHP 5.3+",
 	"keywords": ["TDD","atoum","test","unit testing"],
